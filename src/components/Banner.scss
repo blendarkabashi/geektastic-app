@@ -1,0 +1,43 @@
+@import '../styles/base.scss';
+
+.banner-section{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    .background-image{
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .winners-mobile-only{
+            text-align: center;
+            display: none;
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            margin: 0 auto;
+                margin-bottom: 0;
+                color: $winners-tc2;
+                span{
+                    margin-right: 5px;
+                    &.yellow{
+                        color: $winners-tc1;
+                    }
+                    &.white{
+                        color: white;
+                    }
+                }
+        }
+    }
+    @media (max-width: 500px) {
+        .banner-section{
+            .background-image{
+                position: relative;
+                .winners-mobile-only{
+                    display: unset;
+                }
+            }
+        }
+    }
+}

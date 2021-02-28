@@ -1,11 +1,11 @@
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ headerLogo }) => {
     return (
         <header className="header">
             <div className="container">
                 <div className="header-container">
-                    <img src="assets/component-logo.svg" alt=""></img>
+                    <img src={headerLogo} alt=""></img>
                     <div className="login-mobilemenu">
                         <div className="login-holder">
                             <a href="/#" className="login-btn">
