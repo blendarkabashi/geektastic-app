@@ -1,0 +1,17 @@
+@import '../styles/base.scss';
+
+.join-btn{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    a{
+        border-radius: 3px;
+        background: $cardsbtn-bg;
+        padding: 10px;
+        color: $cardsbtn-tc;
+        font-weight: bold;
+    }
+}
