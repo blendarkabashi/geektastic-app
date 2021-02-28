@@ -1,0 +1,50 @@
+@import '../styles/base.scss';
+
+footer{
+    background: $footer-bg;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .partner-logos{
+        .row{
+            justify-content: space-between;
+            .logo-holder{
+                // text-align: center;
+                margin-bottom: 20px;
+                &:first-child{
+                    text-align:left;
+                }
+                &:nth-child(2){
+                    text-align: right;
+                }
+                &:nth-child(4){
+                    text-align: center;
+                }
+                &:last-child{
+                    text-align: right;
+                }
+            }
+        }
+        p{
+            padding-top: 40px;
+            color: $footer-tc;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    // RESPONSIVENESS
+    @media (max-width: 500px) {
+        .partner-logos{
+            .row{
+                justify-content: center;
+                .logo-holder{
+                    text-align: center !important;
+                }
+            }
+            p{
+                padding: 0px 20px;
+            }
+        }
+    }
+
+}

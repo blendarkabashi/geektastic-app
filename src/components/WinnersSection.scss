@@ -1,0 +1,25 @@
+@import '../styles/base.scss';
+
+.winners-section{
+    padding: 5px 0px;
+    background: $winners-bc;
+    border-bottom: 2px solid $winners-brc;
+    p{
+        margin-bottom: 0;
+        color: $winners-tc2;
+        span{
+            margin-right: 5px;
+            &.yellow{
+                color: $winners-tc1;
+            }
+            &.white{
+                color: white;
+            }
+        }
+    }
+    // RESPONSIVENESS
+    @media (max-width: 500px) {
+        display: none;
+    }
+
+}

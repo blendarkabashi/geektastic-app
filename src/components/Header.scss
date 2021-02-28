@@ -1,0 +1,73 @@
+@import '../styles/base.scss';
+
+.header{
+    background: $header-bc;
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        max-height: 50px;
+        img{
+            height: 105px;
+        }
+        .login-mobilemenu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .login-holder{
+                background: $loginbtn-bc;
+                height: 100%;
+                border-radius: 5px;
+                .login-btn{
+                    padding: 15px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            .mobile-menu{
+                position: relative;
+                height: 50px;
+                width: 50px;
+                background: $hamburger-bc;
+                display: none;
+                span{
+                    position: absolute;
+                    width: 70%;
+                    height: 4px;
+                    border-radius: 1px;
+                    background:#9688A5;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    &:first-child{
+                        top: 13px;
+                    }
+                    &:nth-child(2){
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                    }
+                    &:last-child{
+                        bottom: 13px;
+                    }
+                }
+            }
+        }
+    }
+    // RESPONSIVENESS
+    @media (max-width: 500px) {
+        .header-container{
+            .login-mobilemenu{
+                .login-holder{
+                    margin-right: 10px;
+                    .login-btn{
+                        font-size: 15px;
+                    }
+                }
+                .mobile-menu{
+                    display: unset;
+                }
+            }
+        }
+    }
+}

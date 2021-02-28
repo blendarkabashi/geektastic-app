@@ -1,0 +1,57 @@
+/* bootstrap */
+@import './vendor/bootstrap-reboot';
+@import './vendor/bootstrap-grid';
+
+//COLORS
+$header-bc: #341F4A;
+$loginbtn-bc: #6E5B83;
+$hamburger-bc:#432A5E;
+$winners-bc: #432A5E;
+$winners-tc1: #F9E137;
+$winners-tc2: #C3AEBF;
+$winners-tc3: #ffffff;
+$winners-brc: #6E5B83;
+$icons-bc: #432A5E;
+$icons-tc: #ffffff;
+$icons-brc: #FF3250;
+$cards-tc1: #85FC33;
+$cards-tc2: #ffffff;
+$cards-brc: #FF3250;
+$cardsbtn-bg: #FFEB00;
+$cardsbtn-tc: #432A5E;
+$red-ad-bg: #FF3250;
+$red-ad-tc: #ffffff;
+$footer-bg: #432A5E;
+$footer-tc: #C2ADBF;
+
+// container width 
+.container{
+    max-width: 1024px;
+    @media (max-width: 500px) {
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+.container-wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+// remove default body margins and paddings
+body{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    width: 100%;
+    @media (max-width: 500px) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+// load font family LATO
+h1,h2,h3,h4,h5,p,li,a,div{
+    font-family: 'Lato', sans-serif;
+}
